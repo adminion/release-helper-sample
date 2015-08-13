@@ -1,6 +1,6 @@
 {
   "name": "release-helper-sample",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "testing out my release script",
   "main": "foo",
   "scripts": {
