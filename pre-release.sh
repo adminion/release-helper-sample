@@ -16,6 +16,10 @@ if [ $releaseType == 'major' ]
   then sed -i "4i # ${majorBranch}\n\n" CHANGES.md
 fi
 
-# add changes for this release to the changelog
-sed -i "6i ## ${release}\n`changelog-maker techjeffharris`\n" CHANGES.md
+changes=`changelog-maker techjeffharris`
 
+# add changes for this release to the changelog
+# tried using sed, and it fails when trying to add strings with \n trying awk instead
+newChangelog=`awk -W inplace -v insert="$changes" '{print} NR==5{print insert}' CHANGES.md`
+
+echo "$newChangelog" > CHANGES.md
