@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "release-helper-sample",
   "version": "1.0.1",
   "description": "testing out my release script",
-  "main": "index.js",
+  "main": "foo",
   "scripts": {
     "pre-release": "./pre-release.sh",
     "post-release": "./post-release.sh",
