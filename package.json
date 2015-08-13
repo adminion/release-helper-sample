@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "testing out my release script",
+  "main": "index.js",
+  "scripts": {
+    "pre-release": "./pre-release.sh",
+    "post-release": "./post-release.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Harris <techjeffharris@gmail.com>",
+  "license": "MIT"
+}
