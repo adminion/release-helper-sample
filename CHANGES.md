@@ -3,6 +3,10 @@ CHANGELOG
 
 # v1.x
 
+## v1.1.0
+
+* [[`0656e3fe0f`](https://github.com/techjeffharris/release-helper-sample/commit/0656e3fe0f)] - adding baz (Jeff Harris) 
+
 ## v1.0.1
 
 * [[`9179f1747d`](https://github.com/techjeffharris/release-helper-sample/commit/9179f1747d)] - add an additional newline after the release h2 (Jeff Harris) 
