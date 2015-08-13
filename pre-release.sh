@@ -17,5 +17,5 @@ if [ $releaseType == 'major' ]
 fi
 
 # add changes for this release to the changelog
-sed -i "6i ## ${release}\n`changelog-maker`\n" CHANGES.md
+sed -i "6i ## ${release}\n`changelog-maker techjeffharris`\n" CHANGES.md
 
