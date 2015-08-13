@@ -6,7 +6,7 @@ releaseType=$1
 release=$2
 majorBranch=$3
 
-# if this is a minor release, bump the minor version ()
+# if this is a minor release, bump the minor version 
 if [ $releaseType == 'minor' ]
   then npm --no-git-tag-version version minor
 fi
