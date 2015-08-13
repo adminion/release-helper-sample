@@ -20,6 +20,6 @@ changes=`changelog-maker techjeffharris`
 
 # add changes for this release to the changelog
 # tried using sed, and it fails when trying to add strings with \n trying awk instead
-newChangelog=`awk -W inplace -v insert="## ${release}\n${changes}\n" '{print} NR==5{print insert}' CHANGES.md`
+newChangelog=`awk -W inplace -v insert="## ${release}\n\n${changes}\n" '{print} NR==5{print insert}' CHANGES.md`
 
 echo "$newChangelog" > CHANGES.md
